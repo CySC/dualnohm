@@ -1,0 +1,23 @@
+{
+  "name": "dualnohm",
+  "version": "0.0.0",
+  "description": "Playig with nohm and redis between two servers",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CySC/dualnohm.git"
+  },
+  "keywords": [
+    "nohm",
+    "multiserver",
+    "redis"
+  ],
+  "author": "Andreas Galazis",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/CySC/dualnohm/issues"
+  }
+}
