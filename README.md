@@ -13,11 +13,12 @@ from the project root
 
 
 dependencies:
+
 |   dependency  |   optional    |   type        |   sample setup command                |
-|   ----------  |   ---------   |   ____        |   --------------------                |
+|   ----------  |   ---------   |   ----        |   --------------------                |
 |   node        |   no          |   global      |   sudo npm install -g n&& n stable    |
 |   pm2         |   yes*        |   environment |   sudo npm install -g pm2             |
 |   redis       |   no          |   environment |   sudo yum install redis              |
 
 ***
-*A substitude should be supplied or you can use node directly. In both cases you will need to configure this in  *.env(copies of *env.template scripts) scripts in scripts directory
+**A substitude should be supplied or you can use node directly. In both cases you will need to configure this in  *.env(copies of *env.template scripts) scripts in scripts directory
