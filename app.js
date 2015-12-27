@@ -19,10 +19,7 @@ redis.on("connect", function() {
     console.log("Nohm Connected to Redis Client");
 });
 var port = process.env.PORT || 3000;
-//the actual seerver would have
-// the decription of the stream seperated
-// a stream then can have multiple links
-//but we are  just creating a throw away sample now
+
 var User = nohm.model('User', {
     properties: {
         uid:{type:"string"},
