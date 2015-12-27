@@ -19,6 +19,12 @@
   ],
     "author": "Andreas Galazis",
     "license": "BSD",
+    "dependencies": {
+        "nohm": "~0.9.7",
+        "express": "~4.13.3",
+        "body-parser": "~1.14.1",
+        "redis": "~2.3.0"
+    },
     "bugs": {
         "url": "https://github.com/CySC/dualnohm/issues"
     }
