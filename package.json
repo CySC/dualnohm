@@ -1,25 +1,25 @@
-:{
-  "name": "dualnohm",
-  "version": "0.0.0",
-  "description": "Playig with nohm and redis between two servers",
-  "main": "app.js",
-  "scripts": {
-    "start": "scripts/start.env",
-    "test": "mocha",
-    "stop": "scripts/stop.env"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/CySC/dualnohm.git"
-  },
-  "keywords": [
+{
+    "name": "dualnohm",
+    "version": "0.0.0",
+    "description": "Playig with nohm and redis between two servers",
+    "main": "app.js",
+    "scripts": {
+        "start": "scripts/start.env",
+        "test": "mocha",
+        "stop": "scripts/stop.env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/CySC/dualnohm.git"
+    },
+    "keywords": [
     "nohm",
     "multiserver",
     "redis"
   ],
-  "author": "Andreas Galazis",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/CySC/dualnohm/issues"
-  }
+    "author": "Andreas Galazis",
+    "license": "BSD",
+    "bugs": {
+        "url": "https://github.com/CySC/dualnohm/issues"
+    }
 }
