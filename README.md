@@ -19,4 +19,4 @@ dependencies:
 |   redis       |   no          |   environment |   sudo yum install redis              |
 
 ***
-**A substitute should be supplied or you can use node directly. In both cases you will need to configure this in  *.env(copies of *env.template scripts) scripts in scripts directory
+*A substitute should be supplied or you can use node directly. In both cases you will need to configure this in  *.env(copies of *env.template scripts) scripts in scripts directory
