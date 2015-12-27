@@ -12,11 +12,11 @@ from the project root
 3. npm start
 
 
-depwndencies
-|   dependency  |   optional    |   type        |
-|   ----------  |   ---------   |   ____        |
-|   pm2         |   yes*        |   environment |
-|   redis       |   no          |   environment |
-|   node        |   no          |   global      |
+dependencies:
+|   dependency  |   optional    |   type        |   sample setup command                |
+|   ----------  |   ---------   |   ____        |   --------------------                |
+|   pm2         |   yes*        |   environment |   sudo npm install -g pm2             |
+|   redis       |   no          |   environment |   sudo yum install redis              |
+|   node        |   no          |   global      |   sudo npm install -g n&& n stable    |
 ***
-*A substitude should be supplied
+*A substitude should be supplied or you can use node directly. In both cases you will need to configure this in  *.env(copies of *env.template scripts) scripts in scripts directory
