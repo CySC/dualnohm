@@ -1,10 +1,10 @@
-{
+:{
   "name": "dualnohm",
   "version": "0.0.0",
   "description": "Playig with nohm and redis between two servers",
   "main": "app.js",
   "scripts": {
-    "start" "scripts/start.env",
+    "start": "scripts/start.env",
     "test": "mocha",
     "stop": "scripts/stop.env"
   },
