@@ -5,7 +5,7 @@ In this example the same server is run twice listening to different ports but th
 ### Setup
 1. copy start.env.template to start.env and configure it according to your environment
 
-2. ```shell npm install``` from the project root
+2. ```npm install``` from the project root
 
 3. npm start
 
