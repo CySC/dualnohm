@@ -99,7 +99,7 @@ app.all('*', function(req, res, next){
     res.header("Content-Type", "application/json");
     next();
 });
-nohm.factory('UserModel').subscribe('update', function (event) {
+nohm.factory('User').subscribe('update', function (event) {
     console.log('server'+process.env.SERVER+':someModel with id'+event.target.id+' was updated and now looks like this:', event.target.properties);
 });
 app.get('/users', listUsers);
