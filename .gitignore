@@ -35,3 +35,5 @@ node_modules
 #This project
 #Env scripts dependent on environment
 .env
+#vim swp files
+*.swp
