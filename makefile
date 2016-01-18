@@ -24,26 +24,26 @@ define  nah
 	echo -e "\e[43m Warn \e[0m $1"
 endef
 define symlinkCreated
-	[ -h /$(1) ] && $(call poop,"Symlink to $(1) could not be cretaed")
-endef
-define createSymlink
-	ln -s "/$(1)" "$(DIR)/$(1)" ||  $(call symlinkCreated,$(1)) || $(call ok,"Symlink to $(1) created")
+	[ -h /$(1) ] && $(call ok,"Symlink to $(1) already cretaed")
 endef
 
-#define createInexistentAlias
-#	$(BASHRCALIAS)
-#endef
+define createSymlink
+	$(call symlinkCreated,$(1))
+	[ -h /$(1) ] || ln -s "$(DIR)/$(1)" "/$(1)" 
+	[ -h /$(1) ] ||  $(call poop,"Symlink to $(1) could not be cretaed")
+
+endef
+
 
 define createProjectAliasForCurrentUser
-	echo $(NODEDIR)
 	$(call createInexistentAlias, $(SERVERALIAS), "/$(NODEDIR)")
 #	$(call createInexistentAlias, $(CLIENTALIAS), "/$(NGINXDIR)")
 endef
 
 install:
-	echo $(NODEDIR)
 	@$(call createSymlink,$(NODEDIR)) 
 #	$(call createSymlink,$(NGINXDIR))
 	@$(call createProjectAliasForCurrentUser)
+#       since sourcing wouldn't work
 	@exec bash
 SILENT:install
