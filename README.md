@@ -1,5 +1,5 @@
 # dualnohm
-Using Node Object Hash Mapper with redis in a dual server configuration(DEMO)
+Using Node Object Hash Mapper with redis in a dual server configuration with Pub/sub (DEMO)
 ***
 In this example the same server is run twice listening to different ports but the same would apply to different cooperating servers.
 ### Setup
